@@ -1,0 +1,24 @@
+[package]
+name = "consumer"
+version = "0.1.0"
+authors = ["Johannes Hamfler <jh@z7k.de>"]
+edition = "2018"
+
+[dependencies]
+lapin-futures ="*"
+amq-protocol = "^1.2.0"
+bytes = "^0.4"
+cookie-factory = "^0.2.4"
+failure = "^0.1"
+futures = "^0.1"
+log = "^0.4"
+nom = "^4.2"
+parking_lot = "^0.7"
+tokio-codec = "^0.1"
+tokio-io = "^0.1"
+tokio-sync = "^0.1"
+tokio-timer = "^0.2"
+
+#[dev-dependencies]
+env_logger = "^0.6"
+tokio = "^0.1.8"
