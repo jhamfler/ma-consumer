@@ -12,8 +12,6 @@ echo brokername: "$BROKERNAME"
 
 if [ -z "$BROKERIP" ]
 then
-	ip=$BROKERIP
-else
 	while IFS= read -r line
 	do
 		ips+=("$line")
@@ -21,6 +19,8 @@ else
 
 	ip=${ips[1]}
 	echo found ip: ${ips[1]}
+else
+	ip=$BROKERIP
 fi
 
 echo starting consumer
