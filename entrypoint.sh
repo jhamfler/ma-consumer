@@ -6,7 +6,7 @@ echo broker ip: $BROKERIP
 
 if [ -z "$BROKERNAME" ]
 then
-	BROKERNAME=rabbitmq.default
+	BROKERNAME=rabbitmq.default.svc.cluster.local
 fi
 echo brokername: "$BROKERNAME"
 
