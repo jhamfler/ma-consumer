@@ -26,4 +26,3 @@ fi
 
 echo starting consumer
 consumer "$ip"":5672"
-sleep 60
